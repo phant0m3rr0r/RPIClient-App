@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScreenFragment">
+
+    <Switch
+        android:text="@string/display_power"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:id="@+id/ScreenSwitch"
+        android:textColor="#FFFFFF"
+        />
+
+
+
+    <TextView
+        android:id="@+id/text_display"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="170dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="@string/display_brightness"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#DFDFDF"
+        android:textSize="24sp"
+        android:typeface="normal" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="220dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/sc10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="10" />
+
+        <Button
+            android:id="@+id/sc20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="270dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/sc30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="30" />
+
+        <Button
+            android:id="@+id/sc40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="40" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="320dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/sc50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="50" />
+
+        <Button
+            android:id="@+id/sc60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="60" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="370dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/sc70"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="70" />
+
+        <Button
+            android:id="@+id/sc80"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="80" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="420dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/sc90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="90" />
+
+        <Button
+            android:id="@+id/sc100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MAX" />
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LedModeFragment">
+
+    <Switch
+        android:text="@string/off_on"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:id="@+id/onOffSwitch"
+        android:textColor="#FFFFFF"
+        />
+
+    <TextView
+        android:id="@+id/text_mode"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="@string/led_mode"
+        android:layout_marginTop="60dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#DFDFDF"
+        android:textSize="24sp"
+        android:typeface="normal" />
+
+    <Button
+        android:id="@+id/manualBut"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="110dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="@string/manual" />
+
+    <Button
+        android:id="@+id/spotifyBut"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="160dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="@string/spotify" />
+
+    <RelativeLayout
+        android:id="@+id/layoutpicker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="50dp">
+        <com.larswerkman.holocolorpicker.ColorPicker
+            android:id="@+id/picker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentStart="false"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentBottom="false"
+            android:layout_centerInParent="true" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutbar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_gravity="bottom">
+
+        <com.larswerkman.holocolorpicker.OpacityBar
+            android:id="@+id/opacitybar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            />
+
+    </RelativeLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">RPI Client</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">RPI Client</string>
+    <string name="nav_header_subtitle">Client for app server</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="menu_screen">Screen</string>
+    <string name="menu_mode">LED Mode</string>
+    <string name="menu_remote">Remote</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="max">MAX</string>
+    <string name="_90">90</string>
+    <string name="_70">70</string>
+    <string name="_80">80</string>
+    <string name="_50">50</string>
+    <string name="_60">60</string>
+    <string name="_30">30</string>
+    <string name="_40">40</string>
+    <string name="screen_off">SCREEN OFF</string>
+    <string name="screen_on">SCREEN ON</string>
+    <string name="display_power">DISPLAY POWER</string>
+    <string name="_10">10</string>
+    <string name="_20">20</string>
+    <string name="pref_size_key" />
+    <string name="display_brightness">DISPLAY BRIGHTNESS</string>
+    <string name="manual">MANUAL</string>
+    <string name="spotify">SPOTIFY</string>
+    <string name="led_mode">LED MODE</string>
+    <string name="off_on">OFF / ON</string>
+    <string name="communicate">Communicate</string>
+    <string name="share">Share</string>
+    <string name="contact_developer">Contact Developer</string>
+    <string name="exit">Exit</string>
+</resources>

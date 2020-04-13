@@ -1,0 +1,2 @@
+rootProject.name='RPI Client'
+include ':app'

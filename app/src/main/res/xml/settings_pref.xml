@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<EditTextPreference
+    android:key="PREF_SERVER_IP"
+    android:title="Server IP"
+    android:summary="Internal IP of RPI"
+    android:dialogTitle="Server IP"
+    android:defaultValue = "127.0.0.1"/>
+
+    <EditTextPreference
+        android:key="PREF_SCREEN_PORT"
+        android:title="Screen Port"
+        android:summary="The Port your Screen Server is listening to"
+        android:numeric="integer"
+        android:maxLength="5"
+        android:defaultValue = "12345"/>
+
+    <EditTextPreference
+        android:key="PREF_LED_PORT"
+        android:title="LED Port"
+        android:summary="The Port your LED Server is listening to"
+        android:numeric="integer"
+        android:maxLength="5"
+        android:defaultValue = "12345"/>
+
+    <EditTextPreference
+        android:key="PREF_REMOTE_PORT"
+        android:title="Remote Port"
+        android:summary="The Port your Remote Server is listening to"
+        android:numeric="integer"
+        android:maxLength="5"
+        android:defaultValue = "12345"/>
+
+</PreferenceScreen>
