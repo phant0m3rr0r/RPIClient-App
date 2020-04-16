@@ -8,6 +8,7 @@ import retrofit2.http.POST;
 
 public interface RetrofitInterface {
 
+    //SCREEN PART
     @POST("/screenoff")
     Call<Void> executeScreenOff(@Body HashMap<String, String> map);
 
@@ -43,4 +44,49 @@ public interface RetrofitInterface {
 
     @POST("/screen100")
     Call<Void> executeScreen100(@Body HashMap<String, String> map);
+
+
+    //REMOTE PART
+    @POST("/mute")
+    Call<Void> executeRemoteMute(@Body HashMap<String, String> map);
+
+    @POST("/power")
+    Call<Void> executeRemotePower(@Body HashMap<String, String> map);
+
+    @POST("/down")
+    Call<Void> executeRemoteDown(@Body HashMap<String, String> map);
+
+    @POST("/up")
+    Call<Void> executeRemoteUp(@Body HashMap<String, String> map);
+
+    @POST("/line1")
+    Call<Void> executeRemoteLine1(@Body HashMap<String, String> map);
+
+    @POST("/line2")
+    Call<Void> executeRemoteLine2(@Body HashMap<String, String> map);
+
+    @POST("/opt")
+    Call<Void> executeRemoteOpt(@Body HashMap<String, String> map);
+
+    @POST("/cox")
+    Call<Void> executeRemoteCox(@Body HashMap<String, String> map);
+
+    @POST("/bt")
+    Call<Void> executeRemoteBT(@Body HashMap<String, String> map);
+
+    @POST("/playpause")
+    Call<Void> executeRemotePlayPause(@Body HashMap<String, String> map);
+
+    @POST("/rewind")
+    Call<Void> executeRemoteRewind(@Body HashMap<String, String> map);
+
+    @POST("/forward")
+    Call<Void> executeRemoteForward(@Body HashMap<String, String> map);
+
+    //LED PART
+    @POST("/spotify")
+    Call<Void> executeLedSpotify(@Body HashMap<String, String> map);
+
+    @POST("/off")
+    Call<Void> executeLedSpotifyOff(@Body HashMap<String, String> map);
 }

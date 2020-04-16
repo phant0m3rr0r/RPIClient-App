@@ -80,6 +80,422 @@ public class RemoteFragment extends Fragment {
         retrofitInterface = retrofit.create(RetrofitInterface.class);
         super.onViewCreated(view, savedInstanceState);
 
+
+        //POWER
+        view.findViewById(R.id.remPower).setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(final View view) {
+
+                HashMap<String, String> map = new HashMap<>();
+
+                Call<Void> call = retrofitInterface.executeRemotePower(map);
+
+                call.enqueue(new Callback<Void>() {
+                    @Override
+                    public void onResponse(Call<Void> call, Response<Void> response) {
+
+                        if (response.code() == 200) {
+                            Snackbar.make(view, "OFF", Snackbar.LENGTH_LONG)
+                                    .setAction("Action", null).show();
+                        } else if (response.code() == 400) {
+                            Snackbar.make(view, "Failed", Snackbar.LENGTH_LONG)
+                                    .setAction("Action", null).show();
+                        }
+
+                    }
+
+                    @Override
+                    public void onFailure(Call<Void> call, Throwable t) {
+
+                    }
+                });
+            }
+
+
+
+        });
+
+        //MUTE
+        view.findViewById(R.id.remMute).setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(final View view) {
+
+                HashMap<String, String> map = new HashMap<>();
+
+                Call<Void> call = retrofitInterface.executeRemoteMute(map);
+
+                call.enqueue(new Callback<Void>() {
+                    @Override
+                    public void onResponse(Call<Void> call, Response<Void> response) {
+
+                        if (response.code() == 200) {
+                            Snackbar.make(view, "OFF", Snackbar.LENGTH_LONG)
+                                    .setAction("Action", null).show();
+                        } else if (response.code() == 400) {
+                            Snackbar.make(view, "Failed", Snackbar.LENGTH_LONG)
+                                    .setAction("Action", null).show();
+                        }
+
+                    }
+
+                    @Override
+                    public void onFailure(Call<Void> call, Throwable t) {
+
+                    }
+                });
+            }
+
+
+
+        });
+
+        //VOLUME DOWN
+        view.findViewById(R.id.remVolDown).setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(final View view) {
+
+                HashMap<String, String> map = new HashMap<>();
+
+                Call<Void> call = retrofitInterface.executeRemoteDown(map);
+
+                call.enqueue(new Callback<Void>() {
+                    @Override
+                    public void onResponse(Call<Void> call, Response<Void> response) {
+
+                        if (response.code() == 200) {
+                            Snackbar.make(view, "OFF", Snackbar.LENGTH_LONG)
+                                    .setAction("Action", null).show();
+                        } else if (response.code() == 400) {
+                            Snackbar.make(view, "Failed", Snackbar.LENGTH_LONG)
+                                    .setAction("Action", null).show();
+                        }
+
+                    }
+
+                    @Override
+                    public void onFailure(Call<Void> call, Throwable t) {
+
+                    }
+                });
+            }
+
+
+
+        });
+
+        //VOLUME UP
+        view.findViewById(R.id.remVolUp).setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(final View view) {
+
+                HashMap<String, String> map = new HashMap<>();
+
+                Call<Void> call = retrofitInterface.executeRemoteUp(map);
+
+                call.enqueue(new Callback<Void>() {
+                    @Override
+                    public void onResponse(Call<Void> call, Response<Void> response) {
+
+                        if (response.code() == 200) {
+                            Snackbar.make(view, "OFF", Snackbar.LENGTH_LONG)
+                                    .setAction("Action", null).show();
+                        } else if (response.code() == 400) {
+                            Snackbar.make(view, "Failed", Snackbar.LENGTH_LONG)
+                                    .setAction("Action", null).show();
+                        }
+
+                    }
+
+                    @Override
+                    public void onFailure(Call<Void> call, Throwable t) {
+
+                    }
+                });
+            }
+
+
+
+        });
+
+        //LINE1
+        view.findViewById(R.id.remLine1).setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(final View view) {
+
+                HashMap<String, String> map = new HashMap<>();
+
+                Call<Void> call = retrofitInterface.executeRemoteLine1(map);
+
+                call.enqueue(new Callback<Void>() {
+                    @Override
+                    public void onResponse(Call<Void> call, Response<Void> response) {
+
+                        if (response.code() == 200) {
+                            Snackbar.make(view, "OFF", Snackbar.LENGTH_LONG)
+                                    .setAction("Action", null).show();
+                        } else if (response.code() == 400) {
+                            Snackbar.make(view, "Failed", Snackbar.LENGTH_LONG)
+                                    .setAction("Action", null).show();
+                        }
+
+                    }
+
+                    @Override
+                    public void onFailure(Call<Void> call, Throwable t) {
+
+                    }
+                });
+            }
+
+
+
+        });
+
+        //LINE2
+        view.findViewById(R.id.remLine2).setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(final View view) {
+
+                HashMap<String, String> map = new HashMap<>();
+
+                Call<Void> call = retrofitInterface.executeRemoteLine2(map);
+
+                call.enqueue(new Callback<Void>() {
+                    @Override
+                    public void onResponse(Call<Void> call, Response<Void> response) {
+
+                        if (response.code() == 200) {
+                            Snackbar.make(view, "OFF", Snackbar.LENGTH_LONG)
+                                    .setAction("Action", null).show();
+                        } else if (response.code() == 400) {
+                            Snackbar.make(view, "Failed", Snackbar.LENGTH_LONG)
+                                    .setAction("Action", null).show();
+                        }
+
+                    }
+
+                    @Override
+                    public void onFailure(Call<Void> call, Throwable t) {
+
+                    }
+                });
+            }
+
+
+
+        });
+
+        //OPT
+        view.findViewById(R.id.remOpt).setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(final View view) {
+
+                HashMap<String, String> map = new HashMap<>();
+
+                Call<Void> call = retrofitInterface.executeRemoteOpt(map);
+
+                call.enqueue(new Callback<Void>() {
+                    @Override
+                    public void onResponse(Call<Void> call, Response<Void> response) {
+
+                        if (response.code() == 200) {
+                            Snackbar.make(view, "OFF", Snackbar.LENGTH_LONG)
+                                    .setAction("Action", null).show();
+                        } else if (response.code() == 400) {
+                            Snackbar.make(view, "Failed", Snackbar.LENGTH_LONG)
+                                    .setAction("Action", null).show();
+                        }
+
+                    }
+
+                    @Override
+                    public void onFailure(Call<Void> call, Throwable t) {
+
+                    }
+                });
+            }
+
+
+
+        });
+
+        //COX
+        view.findViewById(R.id.remCox).setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(final View view) {
+
+                HashMap<String, String> map = new HashMap<>();
+
+                Call<Void> call = retrofitInterface.executeRemoteCox(map);
+
+                call.enqueue(new Callback<Void>() {
+                    @Override
+                    public void onResponse(Call<Void> call, Response<Void> response) {
+
+                        if (response.code() == 200) {
+                            Snackbar.make(view, "OFF", Snackbar.LENGTH_LONG)
+                                    .setAction("Action", null).show();
+                        } else if (response.code() == 400) {
+                            Snackbar.make(view, "Failed", Snackbar.LENGTH_LONG)
+                                    .setAction("Action", null).show();
+                        }
+
+                    }
+
+                    @Override
+                    public void onFailure(Call<Void> call, Throwable t) {
+
+                    }
+                });
+            }
+
+
+
+        });
+
+        //BLUETOOTH
+        view.findViewById(R.id.remBluetooth).setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(final View view) {
+
+                HashMap<String, String> map = new HashMap<>();
+
+                Call<Void> call = retrofitInterface.executeRemoteBT(map);
+
+                call.enqueue(new Callback<Void>() {
+                    @Override
+                    public void onResponse(Call<Void> call, Response<Void> response) {
+
+                        if (response.code() == 200) {
+                            Snackbar.make(view, "OFF", Snackbar.LENGTH_LONG)
+                                    .setAction("Action", null).show();
+                        } else if (response.code() == 400) {
+                            Snackbar.make(view, "Failed", Snackbar.LENGTH_LONG)
+                                    .setAction("Action", null).show();
+                        }
+
+                    }
+
+                    @Override
+                    public void onFailure(Call<Void> call, Throwable t) {
+
+                    }
+                });
+            }
+
+
+
+        });
+
+        //PLAYPAUSE
+        view.findViewById(R.id.remPlaypause).setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(final View view) {
+
+                HashMap<String, String> map = new HashMap<>();
+
+                Call<Void> call = retrofitInterface.executeRemotePlayPause(map);
+
+                call.enqueue(new Callback<Void>() {
+                    @Override
+                    public void onResponse(Call<Void> call, Response<Void> response) {
+
+                        if (response.code() == 200) {
+                            Snackbar.make(view, "OFF", Snackbar.LENGTH_LONG)
+                                    .setAction("Action", null).show();
+                        } else if (response.code() == 400) {
+                            Snackbar.make(view, "Failed", Snackbar.LENGTH_LONG)
+                                    .setAction("Action", null).show();
+                        }
+
+                    }
+
+                    @Override
+                    public void onFailure(Call<Void> call, Throwable t) {
+
+                    }
+                });
+            }
+
+
+
+        });
+
+        //REWIND
+        view.findViewById(R.id.remRewind).setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(final View view) {
+
+                HashMap<String, String> map = new HashMap<>();
+
+                Call<Void> call = retrofitInterface.executeRemoteRewind(map);
+
+                call.enqueue(new Callback<Void>() {
+                    @Override
+                    public void onResponse(Call<Void> call, Response<Void> response) {
+
+                        if (response.code() == 200) {
+                            Snackbar.make(view, "OFF", Snackbar.LENGTH_LONG)
+                                    .setAction("Action", null).show();
+                        } else if (response.code() == 400) {
+                            Snackbar.make(view, "Failed", Snackbar.LENGTH_LONG)
+                                    .setAction("Action", null).show();
+                        }
+
+                    }
+
+                    @Override
+                    public void onFailure(Call<Void> call, Throwable t) {
+
+                    }
+                });
+            }
+        });
+
+        //FORWARD
+        view.findViewById(R.id.remForward).setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(final View view) {
+
+                HashMap<String, String> map = new HashMap<>();
+
+                Call<Void> call = retrofitInterface.executeRemoteForward(map);
+
+                call.enqueue(new Callback<Void>() {
+                    @Override
+                    public void onResponse(Call<Void> call, Response<Void> response) {
+
+                        if (response.code() == 200) {
+                            Snackbar.make(view, "OFF", Snackbar.LENGTH_LONG)
+                                    .setAction("Action", null).show();
+                        } else if (response.code() == 400) {
+                            Snackbar.make(view, "Failed", Snackbar.LENGTH_LONG)
+                                    .setAction("Action", null).show();
+                        }
+
+                    }
+
+                    @Override
+                    public void onFailure(Call<Void> call, Throwable t) {
+
+                    }
+                });
+            }
+        });
+        
+
         // Inflate the layout for this fragment
         //return inflater.inflate(R.layout.fragment_main_controller, container, false);
         return view;

@@ -78,7 +78,7 @@ public class ScreenFragment extends Fragment {
         String sServerIp = settings.getString("PREF_SERVER_IP","");
         String sServerPort = settings.getString("PREF_SCREEN_PORT","");
        String IP = "http://" + sServerIp + ":" +  sServerPort;
-        //String IP = "http://192.168.8.155";
+       //String IP = "http://192.168.8.155";
         retrofit = new Retrofit.Builder()
                 .baseUrl(IP)
                 .addConverterFactory(GsonConverterFactory.create())
